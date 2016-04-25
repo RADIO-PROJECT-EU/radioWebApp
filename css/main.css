@@ -1,0 +1,324 @@
+html{
+	height:100%;
+}
+body {
+	/*background: #c9de96; 
+	background: -moz-radial-gradient(center, ellipse cover, #c9de96 0%, #8ab66b 59%, #398235 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover, #c9de96 0%,#8ab66b 59%,#398235 100%); 
+	background: radial-gradient(ellipse at center, #c9de96 0%,#8ab66b 59%,#398235 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=1 ); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;*/
+
+	/*Green-Blue gradient*/
+	/*	background: -moz-linear-gradient(90deg, rgba(89,183,212,1) 0%, rgba(124,198,171,1) 31%, rgba(137,204,157,1) 42%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(58%, rgba(137,204,157,1)), color-stop(69%, rgba(124,198,171,1)), color-stop(100%, rgba(89,183,212,1))); 
+	background: -webkit-linear-gradient(90deg, rgba(89,183,212,1) 0%, rgba(124,198,171,1) 31%, rgba(137,204,157,1) 42%); /
+	background: -o-linear-gradient(90deg, rgba(89,183,212,1) 0%, rgba(124,198,171,1) 31%, rgba(137,204,157,1) 42%); 
+	background: -ms-linear-gradient(90deg, rgba(89,183,212,1) 0%, rgba(124,198,171,1) 31%, rgba(137,204,157,1) 42%); 
+	background: linear-gradient(0deg, rgba(89,183,212,1) 0%, rgba(124,198,171,1) 31%, rgba(137,204,157,1) 42%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89CC9D', endColorstr='#59B7D4',GradientType=0 ); 
+	/*
+
+/*enControl background*/
+	/*background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-color: #56281D;
+	background-size: 2000px auto;  */
+	margin: 0;
+	padding: 0;
+	z-index:1;
+
+	text-align: center;
+	background-color: #d9d9d9;
+}
+
+div#overlay {
+	display: none;
+	z-index: 4;
+	background: #000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+div#specialBox {
+	display: none;
+	position: absolute;
+	z-index: 5;
+	top: 30vh;
+	width: 50%;
+	margin-left: 25%;
+	height: auto;
+	font-size: 5vmin;
+	background: transparent;
+	color: #FFF;
+}
+
+#main-div{
+	position:absolute;
+    /*top:10%;*/
+    width:100%;
+    margin-top:5vmin;
+    padding-bottom: 20vmin;
+}
+
+#titlebar{
+	-webkit-box-shadow: 2px 5px 20px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 5px 20px 5px rgba(0,0,0,0.75);
+	box-shadow: 2px 5px 20px 5px rgba(0,0,0,0.75);
+	/*background-color: #bfbfbf;*/
+	float:left;
+	position:fixed;
+	width:100%;
+	height:5vmin;
+	font-size: 3vmin;
+	z-index:2;
+	color: #d9d9d9;
+	text-transform: uppercase;
+	line-height:5vmin;
+	text-align: center;
+	font-family: "Roboto", sans-serif !important;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,494949+63,494949+95 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b9b9b+0,161616+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b9b9b+0,424242+100 */
+	background: #9b9b9b; /* Old browsers */
+	background: -moz-linear-gradient(top, #9b9b9b 0%, #424242 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #9b9b9b 0%,#424242 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #9b9b9b 0%,#424242 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#424242',GradientType=0 ); /* IE6-9 */
+}
+
+.titlebar-image{
+	max-width:100%;
+	max-height: 100%;
+	float: right;
+}
+
+div.menu{
+
+    position:relative;
+   	line-height:12px;
+   	height: 100%;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    -webkit-column-rule: 0px; /* Chrome, Safari, Opera */
+    -moz-column-rule: 0px; /* Firefox */
+    column-rule: 0px;
+    -webkit-column-rule-width: 0px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 0px; /* Firefox */
+    column-rule-width: 0px;
+}
+
+#main-button-container{
+    position: fixed;
+    width:100%;
+    height:20vmin;
+    bottom:0;
+    -webkit-box-shadow: 0px -8px 23px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -8px 23px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px -8px 23px 5px rgba(0,0,0,0.75);
+	z-index: 3;
+	/*background-color: #bfbfbf*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#494949+5,494949+37,7d7e7d+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,9b9b9b+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#161616+0,9b9b9b+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#424242+0,9b9b9b+100 */
+	background: #424242; /* Old browsers */
+	background: -moz-linear-gradient(top, #424242 0%, #9b9b9b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #424242 0%,#9b9b9b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #424242 0%,#9b9b9b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
+
+}
+
+#enControl_frame{
+	width: 100%; 
+	height: 100vh;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+span.button{
+	font-size: 15vmin; /*70px;*/
+}
+
+span.options-button{
+	font-size: 2.5vmin;
+	float:left;
+}
+
+span.options-button i.button-bg{
+	/*color:#00CCFF ;*/
+	color:none;
+	opacity: 0.5;
+}
+
+span.options-button i.button-bg-out{
+	/*color:#00CCFF ;*/
+	color:white;
+	opacity: 0.5;
+}
+
+span.options-button i.button-icon{
+	/*color:#00CCFF ;*/
+	color:white;
+	opacity: 1;
+}
+
+span.options-button:active i.button-bg{
+	opacity:0.3;
+}
+span.options-button:active i.button-icon{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 3000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 3000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+span.main-button{
+	font-size: 7.5vmin; /*70px;*/
+}
+
+span.main-button i.button-bg{
+	/*color:#00CCFF ;*/
+	color:none;
+	opacity: 0.2;
+}
+
+span.main-button i.button-bg-out{
+	/*color:#00CCFF ;*/
+	color:#496E54;
+	opacity: 1;
+}
+
+span.main-button i.button-icon{
+	/*color:#00CCFF ;*/
+	color:black;
+	opacity: 1;
+}
+
+span.main-button:active i.button-bg{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
+
+
+
+span.button i.button-bg{
+	/*color:#00CCFF ;*/
+	color:none;
+	opacity: 0.2;
+}
+
+span.button i.button-bg-out{
+	/*color:#00CCFF ;*/
+	color:#496E54;
+	opacity: 1;
+}
+
+span.button i.button-icon{
+	/*color:#00CCFF ;*/
+	color:black;
+	opacity: 1;
+}
+
+span.button:active i.button-bg{
+	color:#248f24;
+	opacity:0.8;
+}
+
+.main-menu-image{
+	width:12.5vmin;
+	height:auto;
+	padding-top:1vmin;
+}
+
+.main-menu-image:active{
+	-webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+}
+
+
+
+.dontbreak{
+	-webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.button-text{
+	font-size: 6vmin;
+	color: black;
+   	font-family: 'Roboto', sans-serif !important;
+}
+
+.main-button-text{
+	font-size: 3vmin;
+	color: black;
+   	font-family: 'Roboto', sans-serif !important;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.notification-button {
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+	font-size: 5vmin;
+    -webkit-transition-duration: 0.4s; 
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    border-radius: 12px;
+}
+
+.notification-button:active {
+	background-color: #e7e7e7;
+}
